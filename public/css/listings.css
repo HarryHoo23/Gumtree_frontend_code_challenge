@@ -1,0 +1,117 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 var(--spacing);
+}
+
+p {
+  font-size: var(--font-size-default);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+}
+
+.error__result {
+  margin-top: var(--spacing-x2);
+}
+
+.listings__header {
+  border-bottom: 1px solid var(--color-borders);
+  padding-bottom: var(--spacing-x2);
+}
+
+.listings__header h1 {
+  font-weight: bold;
+}
+
+.listings__header span {
+  color: var(--color-primary);
+}
+
+.listings__grid {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--grid-gap);
+}
+
+.card {
+  padding: var(--spacing-x3) var(--spacing);
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card img {
+  width: calc(100% + var(--spacing-x2));
+  height: 200px;
+  object-fit: cover;
+  margin: var(--spacing-x2) 0;
+  transform: translateX(-8px);
+  -webkit-transform: translateX(-8px);
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info h3 {
+  color: var(--color-primary);
+  font-size: var(--font-size-default);
+}
+
+.card-info p {
+  color: var(--color-text-light);
+  font-size: var(--font-size-default);
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.btn {
+  padding: var(--spacing) var(--spacing-x2);
+  margin: var(--spacing) var(--spacing) var(--spacing) 0;
+  font-size: var(--font-size-default);
+  font-weight: bold;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+}
+
+@media (max-width: 799px) {
+  /* Mobile */
+  .home__container {
+    background: var(--color-content-bg);
+  }
+}
+
+@media (min-width: 800px) {
+  /* tablet */
+  .listings__grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  /* desktop */
+}
