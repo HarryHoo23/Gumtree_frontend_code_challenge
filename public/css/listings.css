@@ -96,6 +96,13 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   -webkit-border-radius: 4px;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.btn:hover {
+  background-color: var( --color-primary-dark);
+  color: var(--color-primary-light);
 }
 
 @media (max-width: 799px) {
